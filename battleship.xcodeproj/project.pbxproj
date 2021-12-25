@@ -9,13 +9,17 @@
 /* Begin PBXBuildFile section */
 		58218BFB277669CB004E2DC0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218BFA277669CB004E2DC0 /* AppDelegate.swift */; };
 		58218BFD277669CB004E2DC0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218BFC277669CB004E2DC0 /* SceneDelegate.swift */; };
-		58218BFF277669CB004E2DC0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218BFE277669CB004E2DC0 /* ViewController.swift */; };
 		58218C02277669CB004E2DC0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58218C00277669CB004E2DC0 /* Main.storyboard */; };
 		58218C04277669D0004E2DC0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58218C03277669D0004E2DC0 /* Assets.xcassets */; };
 		58218C07277669D0004E2DC0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58218C05277669D0004E2DC0 /* LaunchScreen.storyboard */; };
 		58218C12277669D1004E2DC0 /* battleshipTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218C11277669D1004E2DC0 /* battleshipTests.swift */; };
 		58218C1C277669D1004E2DC0 /* battleshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218C1B277669D1004E2DC0 /* battleshipUITests.swift */; };
 		58218C1E277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218C1D277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift */; };
+		58E3A9A7277693E9006F998A /* SocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9A6277693E9006F998A /* SocketHandler.swift */; };
+		58E3A9AA277695BF006F998A /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 58E3A9A9277695BF006F998A /* SocketIO */; };
+		58E3A9B22776B952006F998A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B12776B952006F998A /* ViewController.swift */; };
+		58E3A9B42776D73F006F998A /* crtRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B32776D73F006F998A /* crtRoomViewController.swift */; };
+		58E3A9B82776E55D006F998A /* joinRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B72776E55D006F998A /* joinRoomViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,7 +43,6 @@
 		58218BF7277669CB004E2DC0 /* battleship.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = battleship.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58218BFA277669CB004E2DC0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		58218BFC277669CB004E2DC0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		58218BFE277669CB004E2DC0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58218C01277669CB004E2DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58218C03277669D0004E2DC0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58218C06277669D0004E2DC0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,10 @@
 		58218C17277669D1004E2DC0 /* battleshipUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = battleshipUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58218C1B277669D1004E2DC0 /* battleshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipUITests.swift; sourceTree = "<group>"; };
 		58218C1D277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		58E3A9A6277693E9006F998A /* SocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketHandler.swift; sourceTree = "<group>"; };
+		58E3A9B12776B952006F998A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58E3A9B32776D73F006F998A /* crtRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crtRoomViewController.swift; sourceTree = "<group>"; };
+		58E3A9B72776E55D006F998A /* joinRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = joinRoomViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58E3A9AA277695BF006F998A /* SocketIO in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,8 +109,11 @@
 			children = (
 				58218BFA277669CB004E2DC0 /* AppDelegate.swift */,
 				58218BFC277669CB004E2DC0 /* SceneDelegate.swift */,
-				58218BFE277669CB004E2DC0 /* ViewController.swift */,
+				58E3A9B12776B952006F998A /* ViewController.swift */,
+				58E3A9B32776D73F006F998A /* crtRoomViewController.swift */,
 				58218C00277669CB004E2DC0 /* Main.storyboard */,
+				58E3A9B72776E55D006F998A /* joinRoomViewController.swift */,
+				58E3A9A6277693E9006F998A /* SocketHandler.swift */,
 				58218C03277669D0004E2DC0 /* Assets.xcassets */,
 				58218C05277669D0004E2DC0 /* LaunchScreen.storyboard */,
 				58218C08277669D0004E2DC0 /* Info.plist */,
@@ -143,6 +154,9 @@
 			dependencies = (
 			);
 			name = battleship;
+			packageProductDependencies = (
+				58E3A9A9277695BF006F998A /* SocketIO */,
+			);
 			productName = battleship;
 			productReference = 58218BF7277669CB004E2DC0 /* battleship.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +229,9 @@
 				Base,
 			);
 			mainGroup = 58218BEE277669CB004E2DC0;
+			packageReferences = (
+				58E3A9A8277695BF006F998A /* XCRemoteSwiftPackageReference "socket.io-client-swift" */,
+			);
 			productRefGroup = 58218BF8277669CB004E2DC0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,8 +275,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58218BFF277669CB004E2DC0 /* ViewController.swift in Sources */,
+				58E3A9A7277693E9006F998A /* SocketHandler.swift in Sources */,
 				58218BFB277669CB004E2DC0 /* AppDelegate.swift in Sources */,
+				58E3A9B22776B952006F998A /* ViewController.swift in Sources */,
+				58E3A9B82776E55D006F998A /* joinRoomViewController.swift in Sources */,
+				58E3A9B42776D73F006F998A /* crtRoomViewController.swift in Sources */,
 				58218BFD277669CB004E2DC0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -604,6 +624,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		58E3A9A8277695BF006F998A /* XCRemoteSwiftPackageReference "socket.io-client-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/socketio/socket.io-client-swift.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		58E3A9A9277695BF006F998A /* SocketIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 58E3A9A8277695BF006F998A /* XCRemoteSwiftPackageReference "socket.io-client-swift" */;
+			productName = SocketIO;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 58218BEF277669CB004E2DC0 /* Project object */;
 }
