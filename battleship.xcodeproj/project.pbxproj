@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -20,6 +20,7 @@
 		58E3A9B22776B952006F998A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B12776B952006F998A /* ViewController.swift */; };
 		58E3A9B42776D73F006F998A /* crtRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B32776D73F006F998A /* crtRoomViewController.swift */; };
 		58E3A9B82776E55D006F998A /* joinRoomViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B72776E55D006F998A /* joinRoomViewController.swift */; };
+		58EA7E982776FCB6001A8F94 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58EA7E972776FCB6001A8F94 /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		58E3A9B12776B952006F998A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58E3A9B32776D73F006F998A /* crtRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crtRoomViewController.swift; sourceTree = "<group>"; };
 		58E3A9B72776E55D006F998A /* joinRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = joinRoomViewController.swift; sourceTree = "<group>"; };
+		58EA7E972776FCB6001A8F94 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 				58E3A9B12776B952006F998A /* ViewController.swift */,
 				58E3A9B32776D73F006F998A /* crtRoomViewController.swift */,
 				58218C00277669CB004E2DC0 /* Main.storyboard */,
+				58EA7E972776FCB6001A8F94 /* GameViewController.swift */,
 				58E3A9B72776E55D006F998A /* joinRoomViewController.swift */,
 				58E3A9A6277693E9006F998A /* SocketHandler.swift */,
 				58218C03277669D0004E2DC0 /* Assets.xcassets */,
@@ -221,7 +224,7 @@
 				};
 			};
 			buildConfigurationList = 58218BF2277669CB004E2DC0 /* Build configuration list for PBXProject "battleship" */;
-			compatibilityVersion = "Xcode 13.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -275,6 +278,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58EA7E982776FCB6001A8F94 /* GameViewController.swift in Sources */,
 				58E3A9A7277693E9006F998A /* SocketHandler.swift in Sources */,
 				58218BFB277669CB004E2DC0 /* AppDelegate.swift in Sources */,
 				58E3A9B22776B952006F998A /* ViewController.swift in Sources */,
