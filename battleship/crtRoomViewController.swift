@@ -18,7 +18,7 @@ class crtRoomViewController: UIViewController {
         SocketHandler.sharedInstance.establishedConnection();
         
         mSocket.on("room_id"){ ( dataArray, ack ) -> Void in
-                    let dataReceived = dataArray[0] as! Int
+                    let dataReceived = dataArray[0] as! String
                     self.roomId.text = "\(dataReceived)"
                 }
         mSocket.on("session"){ ( dataArray, ack ) -> Void in

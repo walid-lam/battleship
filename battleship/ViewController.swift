@@ -12,14 +12,11 @@ class ViewController: UIViewController {
     
     var user: String!
     
-//    @IBOutlet weak var label: UILabel!
     
-    @IBAction func btact(_ sender: Any) {
-            mSocket.emit("counter")
-        }
-        
-    @IBOutlet weak var userlabel: UILabel!
-    
+    @IBOutlet weak var tesingLabel: UILabel!
+    @IBAction func testButton(_ sender: Any) {
+        mSocket.emit("testing")
+    }
     
     @IBOutlet weak var username: UITextField!
     
@@ -44,21 +41,13 @@ class ViewController: UIViewController {
                     let dataReceived = dataArray[0] as! Int
                     if(dataReceived == 200){
                         self.performSegue(withIdentifier: "LoginSegue", sender: self)
-//                        if (self.restorationIdentifier != nil){
-//                            self.userlabel.text = self.user
-//                        }
                     }
                 }
-//        if (self.restorationIdentifier != nil){
-//            userlabel.text = user
-//        }
-        
-
-
-        
-
-        
-               
+        mSocket.on("test"){ ( dataArray, ack ) -> Void in
+            let testing = dataArray[0] as! String
+            self.tesingLabel.text = testing
+        }
+           
     }
 
 

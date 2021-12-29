@@ -22,7 +22,23 @@ class GameViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         SocketHandler.sharedInstance.establishedConnection();
-
+        
+        mSocket.on("gameCreated"){ ( dataArray, ack ) -> Void in
+            let dataReceived = dataArray[0] as! Bool
+//            self.labeltest.text = dataReceived
+            self.bt1.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt2.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt3.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt4.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt5.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt6.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt7.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt8.setImage(UIImage(named: "blue.png"), for: .normal)
+            self.bt9.setImage(UIImage(named: "blue.png"), for: .normal)
+            if(dataReceived == true){
+                return
+            }
+        }
         
     }
     
@@ -131,22 +147,6 @@ class GameViewController: UIViewController {
         let string = grid.map {"\($0)"}.reduce("") { $0 + $1 }
         mSocket.emit("confirmBoard", string)
         
-        mSocket.on("gameCreated"){ ( dataArray, ack ) -> Void in
-            
-            let dataReceived = dataArray[0] as! String
-//            self.labeltest.text = dataReceived
-            if(dataReceived == "false"){
-                self.bt1.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt2.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt3.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt4.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt5.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt6.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt7.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt8.setImage(UIImage(named: "blue.png"), for: .normal)
-                self.bt9.setImage(UIImage(named: "blue.png"), for: .normal);
-            }
-                }
     }
     
 }
