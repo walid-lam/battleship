@@ -210,9 +210,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fQr-XH-bFc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="fQr-XH-bFc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Room ID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="oXO-KZ-WRB">
                                 <rect key="frame" x="74.5" y="306.5" width="226" height="34"/>
@@ -262,12 +261,16 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="oXO-KZ-WRB" firstAttribute="centerX" secondItem="GVR-uC-g5n" secondAttribute="centerX" id="5Sm-RV-Fq1"/>
+                            <constraint firstAttribute="bottom" secondItem="fQr-XH-bFc" secondAttribute="bottom" id="9eH-MZ-66L"/>
+                            <constraint firstItem="fQr-XH-bFc" firstAttribute="leading" secondItem="GVR-uC-g5n" secondAttribute="leading" id="KBr-Ih-ts9"/>
                             <constraint firstItem="WVj-2H-OdZ" firstAttribute="centerX" secondItem="GVR-uC-g5n" secondAttribute="centerX" id="KNY-KD-bw3"/>
                             <constraint firstItem="pnF-E7-YOb" firstAttribute="top" secondItem="GVR-uC-g5n" secondAttribute="top" constant="20" id="Q9L-ql-6GY"/>
                             <constraint firstItem="KAi-W5-vEv" firstAttribute="top" secondItem="oXO-KZ-WRB" secondAttribute="bottom" constant="30" id="Tfj-sV-az0"/>
+                            <constraint firstAttribute="trailing" secondItem="fQr-XH-bFc" secondAttribute="trailing" id="VVA-pn-4RY"/>
                             <constraint firstItem="oXO-KZ-WRB" firstAttribute="centerY" secondItem="GVR-uC-g5n" secondAttribute="centerY" id="X1H-RC-P6F"/>
                             <constraint firstItem="pnF-E7-YOb" firstAttribute="centerX" secondItem="GVR-uC-g5n" secondAttribute="centerX" id="ZVn-uK-5vL"/>
                             <constraint firstItem="KAi-W5-vEv" firstAttribute="centerX" secondItem="GVR-uC-g5n" secondAttribute="centerX" id="cNk-qx-TY9"/>
+                            <constraint firstItem="fQr-XH-bFc" firstAttribute="top" secondItem="GVR-uC-g5n" secondAttribute="top" id="jyd-Tv-X1T"/>
                             <constraint firstItem="oXO-KZ-WRB" firstAttribute="top" secondItem="WVj-2H-OdZ" secondAttribute="bottom" constant="15" id="ohw-r6-2Ij"/>
                         </constraints>
                     </view>
@@ -290,9 +293,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-OR-M7S">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="IMW-OR-M7S">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Create a room" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ilh-Se-Ayr">
                                 <rect key="frame" x="89.5" y="20" width="196" height="36"/>
@@ -358,12 +360,16 @@
                         <constraints>
                             <constraint firstItem="iVv-SA-xGY" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" id="1Xi-Xc-SBm"/>
                             <constraint firstItem="CFQ-Zu-nXW" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" id="85e-Eh-dsV"/>
+                            <constraint firstAttribute="trailing" secondItem="IMW-OR-M7S" secondAttribute="trailing" id="8D6-vz-uEQ"/>
                             <constraint firstItem="70f-5h-eeg" firstAttribute="top" secondItem="CFQ-Zu-nXW" secondAttribute="bottom" constant="30" id="ALR-ac-q0c"/>
                             <constraint firstItem="rVj-wO-tV2" firstAttribute="top" secondItem="70f-5h-eeg" secondAttribute="bottom" constant="25" id="F5s-IH-xq3"/>
+                            <constraint firstItem="IMW-OR-M7S" firstAttribute="leading" secondItem="mg5-qI-rUo" secondAttribute="leading" id="FX8-f4-n4v"/>
                             <constraint firstItem="rVj-wO-tV2" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" id="IiG-vC-Slg"/>
                             <constraint firstItem="70f-5h-eeg" firstAttribute="centerY" secondItem="mg5-qI-rUo" secondAttribute="centerY" constant="100" id="NEb-Q2-NWd"/>
                             <constraint firstItem="iVv-SA-xGY" firstAttribute="top" secondItem="70f-5h-eeg" secondAttribute="bottom" constant="25" id="WAx-ji-IzL"/>
+                            <constraint firstItem="IMW-OR-M7S" firstAttribute="top" secondItem="mg5-qI-rUo" secondAttribute="top" id="aja-4R-9op"/>
                             <constraint firstItem="70f-5h-eeg" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" id="fzj-ap-dZg"/>
+                            <constraint firstAttribute="bottom" secondItem="IMW-OR-M7S" secondAttribute="bottom" id="khM-vc-sMa"/>
                             <constraint firstItem="yjM-vz-e6u" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" constant="60" id="kyZ-Dg-bVn"/>
                             <constraint firstItem="ilh-Se-Ayr" firstAttribute="centerX" secondItem="mg5-qI-rUo" secondAttribute="centerX" id="tYQ-f0-UDR"/>
                             <constraint firstItem="ilh-Se-Ayr" firstAttribute="top" secondItem="mg5-qI-rUo" secondAttribute="top" constant="20" id="woV-I8-wDw"/>
@@ -541,7 +547,7 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="bND-ih-3Og"/>
-        <segue reference="0zi-U4-7fS"/>
+        <segue reference="Ket-hV-XXj"/>
         <segue reference="cxx-Sw-wWP"/>
     </inferredMetricsTieBreakers>
     <resources>
