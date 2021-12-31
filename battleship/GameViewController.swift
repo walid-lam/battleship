@@ -9,6 +9,7 @@ import UIKit
 
 class GameViewController: UIViewController {
     var mSocket=SocketHandler.sharedInstance.getSocket();
+    @IBOutlet weak var user: UILabel!
     @IBOutlet weak var bt1: UIButton!
     @IBOutlet weak var bt2: UIButton!
     @IBOutlet weak var bt3: UIButton!
@@ -23,7 +24,7 @@ class GameViewController: UIViewController {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true 
         SocketHandler.sharedInstance.establishedConnection();
-        
+        user.text=SharedUsername.sharedInstance.usr
         mSocket.on("gameCreated"){ ( dataArray, ack ) -> Void in
             let dataReceived = dataArray[0] as! Bool
 //            self.labeltest.text = dataReceived

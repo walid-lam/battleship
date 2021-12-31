@@ -12,11 +12,12 @@ class crtRoomViewController: UIViewController {
     @IBOutlet weak var roomId: UILabel!
     
     
+    @IBOutlet weak var user: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true 
         SocketHandler.sharedInstance.establishedConnection();
-        
+        user.text=SharedUsername.sharedInstance.usr
         mSocket.on("room_id"){ ( dataArray, ack ) -> Void in
                     let dataReceived = dataArray[0] as! String
                     self.roomId.text = "\(dataReceived)"

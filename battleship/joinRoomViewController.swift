@@ -13,6 +13,7 @@ class joinRoomViewController: UIViewController {
 //    @IBAction func joinbtn(_ sender: Any) {
 //        mSocket.emit("join_room", [joinID.text])
 //    }
+    @IBOutlet weak var user: UILabel!
     @IBOutlet weak var joinidd: UITextField!
     @IBAction func btnn(_ sender: Any) {
         mSocket.emit("join_room", [joinidd.text])
@@ -20,6 +21,7 @@ class joinRoomViewController: UIViewController {
     override func viewDidLoad() {
         SocketHandler.sharedInstance.establishedConnection();
         super.viewDidLoad()
+        user.text=SharedUsername.sharedInstance.usr
         navigationItem.hidesBackButton = true 
         mSocket.on("sessionJoin"){ ( dataArray, ack ) -> Void in
             self.performSegue(withIdentifier: "gotoSession", sender: self)

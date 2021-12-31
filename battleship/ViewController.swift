@@ -33,14 +33,6 @@ class ViewController: UIViewController {
     @IBAction func signupbtn(_ sender: Any) {
         mSocket.emit("register", ["username": username.text, "password": password.text])
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-
-            // Get a reference to the second view controller
-            let secondViewController = segue.destination as! MenuViewController
-
-            // Set a variable in the second view controller with the String to pass
-            secondViewController.receivedString = username.text!
-        }
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.hidesBackButton = true 
@@ -50,6 +42,7 @@ class ViewController: UIViewController {
                     let dataReceived = dataArray[0] as! Int
                     if(dataReceived == 200){
                         self.performSegue(withIdentifier: "LoginSegue", sender: self)
+                        SharedUsername.sharedInstance.usr=self.username.text
                     }
                 }
            

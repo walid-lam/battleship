@@ -16,6 +16,7 @@
 		58218C1C277669D1004E2DC0 /* battleshipUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218C1B277669D1004E2DC0 /* battleshipUITests.swift */; };
 		58218C1E277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58218C1D277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift */; };
 		58E22BB6277F1C3600F15D55 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E22BB5277F1C3600F15D55 /* MenuViewController.swift */; };
+		58E22BC0277F513200F15D55 /* SharedUsername.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E22BBF277F513100F15D55 /* SharedUsername.swift */; };
 		58E3A9A7277693E9006F998A /* SocketHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9A6277693E9006F998A /* SocketHandler.swift */; };
 		58E3A9AA277695BF006F998A /* SocketIO in Frameworks */ = {isa = PBXBuildFile; productRef = 58E3A9A9277695BF006F998A /* SocketIO */; };
 		58E3A9B22776B952006F998A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58E3A9B12776B952006F998A /* ViewController.swift */; };
@@ -55,6 +56,7 @@
 		58218C1B277669D1004E2DC0 /* battleshipUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipUITests.swift; sourceTree = "<group>"; };
 		58218C1D277669D1004E2DC0 /* battleshipUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = battleshipUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		58E22BB5277F1C3600F15D55 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		58E22BBF277F513100F15D55 /* SharedUsername.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedUsername.swift; sourceTree = "<group>"; };
 		58E3A9A6277693E9006F998A /* SocketHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocketHandler.swift; sourceTree = "<group>"; };
 		58E3A9B12776B952006F998A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		58E3A9B32776D73F006F998A /* crtRoomViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = crtRoomViewController.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				58EA7E972776FCB6001A8F94 /* GameViewController.swift */,
 				58E3A9B72776E55D006F998A /* joinRoomViewController.swift */,
 				58E3A9A6277693E9006F998A /* SocketHandler.swift */,
+				58E22BBF277F513100F15D55 /* SharedUsername.swift */,
 				58218C03277669D0004E2DC0 /* Assets.xcassets */,
 				58218C05277669D0004E2DC0 /* LaunchScreen.storyboard */,
 				58218C08277669D0004E2DC0 /* Info.plist */,
@@ -284,6 +287,7 @@
 				58EA7E982776FCB6001A8F94 /* GameViewController.swift in Sources */,
 				58E3A9A7277693E9006F998A /* SocketHandler.swift in Sources */,
 				58218BFB277669CB004E2DC0 /* AppDelegate.swift in Sources */,
+				58E22BC0277F513200F15D55 /* SharedUsername.swift in Sources */,
 				58E3A9B22776B952006F998A /* ViewController.swift in Sources */,
 				58E3A9B82776E55D006F998A /* joinRoomViewController.swift in Sources */,
 				58E3A9B42776D73F006F998A /* crtRoomViewController.swift in Sources */,

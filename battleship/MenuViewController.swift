@@ -11,10 +11,15 @@ class MenuViewController: UIViewController {
    
     
     @IBOutlet weak var user: UILabel!
-    var receivedString = ""
+    var mSocket=SocketHandler.sharedInstance.getSocket();
+    
+    @IBAction func createRoom(_ sender: Any) {
+        mSocket.emit("create_room")
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        user.text = receivedString
+        SocketHandler.sharedInstance.establishedConnection();
+        user.text=SharedUsername.sharedInstance.usr
         // Do any additional setup after loading the view.
     }
     
