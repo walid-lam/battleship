@@ -8,10 +8,13 @@
 import UIKit
 
 class MenuViewController: UIViewController {
-
+   
+    
+    @IBOutlet weak var user: UILabel!
+    var receivedString = ""
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        user.text = receivedString
         // Do any additional setup after loading the view.
     }
     
