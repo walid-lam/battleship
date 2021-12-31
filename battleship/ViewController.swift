@@ -35,6 +35,7 @@ class ViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true 
         SocketHandler.sharedInstance.establishedConnection();
                 
                 mSocket.on("status"){ ( dataArray, ack ) -> Void in

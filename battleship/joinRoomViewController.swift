@@ -20,6 +20,7 @@ class joinRoomViewController: UIViewController {
     override func viewDidLoad() {
         SocketHandler.sharedInstance.establishedConnection();
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true 
         mSocket.on("sessionJoin"){ ( dataArray, ack ) -> Void in
             self.performSegue(withIdentifier: "gotoSession", sender: self)
                 }

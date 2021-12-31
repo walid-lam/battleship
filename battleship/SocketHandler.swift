@@ -10,7 +10,7 @@ import Foundation
 
 class SocketHandler: NSObject{
     static let sharedInstance = SocketHandler()
-    let socket = SocketManager(socketURL: URL(string: "http://localhost:5000")!, config: [.log(true), .compress])
+    let socket = SocketManager(socketURL: URL(string: "https://p-battleship.herokuapp.com/")!, config: [.log(true), .compress])
     var mSocket: SocketIOClient!
     
     override init() {

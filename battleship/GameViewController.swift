@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     @IBOutlet weak var labeltest: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton = true 
         SocketHandler.sharedInstance.establishedConnection();
         
         mSocket.on("gameCreated"){ ( dataArray, ack ) -> Void in
@@ -36,6 +37,7 @@ class GameViewController: UIViewController {
             self.bt8.setImage(UIImage(named: "blue.png"), for: .normal)
             self.bt9.setImage(UIImage(named: "blue.png"), for: .normal)
             if(dataReceived == true){
+                
                 return
             }
         }

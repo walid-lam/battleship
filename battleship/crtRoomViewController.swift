@@ -14,7 +14,7 @@ class crtRoomViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        navigationItem.hidesBackButton = true 
         SocketHandler.sharedInstance.establishedConnection();
         
         mSocket.on("room_id"){ ( dataArray, ack ) -> Void in
