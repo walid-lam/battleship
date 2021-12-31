@@ -18,6 +18,7 @@ class MenuViewController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.hidesBackButton=true
         SocketHandler.sharedInstance.establishedConnection();
         user.text=SharedUsername.sharedInstance.usr
         // Do any additional setup after loading the view.
